@@ -1,0 +1,94 @@
+h1, h2, h3, p, ul, li, select, label, button, table {
+font-family: Roboto;
+font-style: normal;
+}
+
+header {
+position: absolute;
+width: 100%;
+height: 96px;
+left: 0px;
+top: 0px;
+background: #FAA71B;
+margin-bottom: 50px;
+}
+
+header h1 
+{
+font-weight: bold;
+font-size: 4u;
+line-height: 56px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+margin-left: 10px;
+color: #FFFFFF; }
+
+.faixa1 {
+position: absolute;
+width: 100%;
+height: 24px;
+left: 0px;
+top: 96px;
+background: #64C6D3;
+}
+
+.faixa2 {
+position: absolute;
+width: 100%;
+height: 24px;
+left: 0px;
+top: 120px;
+
+background: #1495AB;
+}
+
+.busca_disciplina {
+  margin-top: 160px;
+  margin-left: 40px
+}
+
+.resultado_busca {
+  position: absolute;
+  width: 60%;
+  left: 40px;
+  top: 200px;
+  background: rgba(106, 110, 110, 0.30);
+  padding: 30px;
+}
+
+.resultado_busca h2 {
+font-weight: bold;
+font-size: 3u;
+line-height: 47px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+color: #1495AB;
+}
+
+.resultado_busca h3 {
+font-weight: bold;
+font-size: 2u;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+color: #64C6D3;
+}
+
+.professor_horas table {
+right: 0px;
+width: 40%;
+margin-left: 800px;
+}
+footer {
+bottom: 0px;
+left: 0px;
+height: 40px;
+width: 100%;
+position: absolute;
+display: flex;
+align-items: center;
+background-color: #1495AB;
+}
