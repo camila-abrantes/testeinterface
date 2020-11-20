@@ -1,94 +1,226 @@
-h1, h2, h3, p, ul, li, select, label, button, table {
+html,body{
 font-family: Roboto;
 font-style: normal;
+
 }
 
-header {
-position: absolute;
-width: 100%;
-height: 96px;
-left: 0px;
-top: 0px;
-background: #FAA71B;
-margin-bottom: 50px;
+header, section, article, footer, p,main,h1,h2,h3,h4 {
+margin:0;
+padding: 0;
 }
 
-header h1 
-{
-font-weight: bold;
-font-size: 4u;
-line-height: 56px;
+html{
+height: 100%;
+}
+
+body{
+background:#fff;
+margin:0 auto;
+margin-bottom:0;
+height: 100vh;
 display: flex;
-align-items: center;
-text-transform: uppercase;
-margin-left: 10px;
-color: #FFFFFF; }
+flex-direction: column;
+}
+
+body>header h1{
+background: #FAA71B;
+color:#fff;
+left: 0px;
+padding:1rem 0;
+text-align: center;
+margin-top:0;
+width:100%;  
+}
 
 .faixa1 {
-position: absolute;
 width: 100%;
-height: 24px;
+height: 18px;
 left: 0px;
-top: 96px;
 background: #64C6D3;
 }
 
 .faixa2 {
-position: absolute;
 width: 100%;
-height: 24px;
+height: 18px;
 left: 0px;
-top: 120px;
-
 background: #1495AB;
 }
 
-.busca_disciplina {
-  margin-top: 160px;
-  margin-left: 40px
+section{
+display: block;
+width:80%;
+padding: 0 1rem 1rem 1rem;
+margin: auto;
+margin-bottom:0;
 }
 
-.resultado_busca {
-  position: absolute;
-  width: 60%;
-  left: 40px;
-  top: 200px;
-  background: rgba(106, 110, 110, 0.30);
-  padding: 30px;
+section>header {
+padding:0  0 1rem 0;  
+font-size:2rem;
 }
 
-.resultado_busca h2 {
-font-weight: bold;
-font-size: 3u;
-line-height: 47px;
-display: flex;
-align-items: center;
-text-transform: uppercase;
+article{
+background: rgba(106, 110, 110, 0.30);
+padding: 1rem;
+}
+
+article>header h2{
 color: #1495AB;
+font-weight: 800;
+margin-bottom:1rem;  
 }
 
-.resultado_busca h3 {
-font-weight: bold;
-font-size: 2u;
-line-height: 42px;
-display: flex;
-align-items: center;
-text-transform: uppercase;
+.profes_disp h3, .turmas_disp h3 {
 color: #64C6D3;
+font-weight: bold;  
 }
 
-.professor_horas table {
-right: 0px;
-width: 40%;
-margin-left: 800px;
+.flex-container {
+    display: flex;
 }
-footer {
-bottom: 0px;
-left: 0px;
-height: 40px;
-width: 100%;
-position: absolute;
-display: flex;
-align-items: center;
-background-color: #1495AB;
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    width:100%;
+    margin-right: 80px;
+    padding-right: 180px;
+} 
+
+.flex-child:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+    width:50%;
+} 
+
+.turmas_disp * {
+  margin: 0.2rem;
 }
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  overflow: scroll;
+  max-width: 800px;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+thead, tbody{
+  display: block;  
+}
+
+tbody{
+  overflow-y: scroll;
+  height: 100px;
+  }
+
+th, td {
+  padding: 5px;
+  width:20%;
+}
+
+table * {
+  position: relative;
+}
+
+td{
+    border: 1px solid rgba(106, 110, 110);
+}
+
+table td, table th {
+  padding: 8px;
+}
+
+table thead tr {
+  height: 60px;
+  background: #1495AB;
+  font-size: 16px;
+  color:#FFFFFF;
+  width:100%;
+
+}
+
+table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #E3F1D5;
+}
+
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+.container {
+  height: 50px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.myButton {
+  background-color:#FAA71B;
+	border:0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1.5vw;
+	font-weight:bold;
+	padding:0.5rem;
+  margin-top:0.2rem;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#64C6D3;
+}
+
+body>footer{
+background: #1495AB;
+color:#fff;
+font-weight: bold;
+font-size: 1u;
+padding:1rem 0;
+text-align: center;
+margin-top:0;
+}
+
+.content{
+flex:1 0 auto;
+/* flex-grow: 1;
+flex-shrink: 0;
+flex-basis: auto;*/
+}
+
+
+
+
+
+
+
